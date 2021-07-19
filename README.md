@@ -1,7 +1,7 @@
 <br>
 <p align="center"><img src="imgs/logo.png" alt="evo" height="90" border="0" />
 <br>
-<b><p align="justify">EVO: pipelines for analysis of evolutionary patterns in SARS-CoV-2 genomes</p></b>
+<b>EVO: pipelines for analysis of evolutionary patterns in SARS-CoV-2 genomes</b>
 </p>
 
 ### Installation ###
