@@ -1,7 +1,8 @@
 <br>
-<p align="center"><img src="imgs/logo.png" alt="evo" height="90" border="0" /></p>
+<p align="center"><img src="imgs/logo.png" alt="evo" height="90" border="0" />
 <br>
-<b><p align="justify">EVO is a package to analyze Evolutionary patterns in SARS-CoV-2 genomes.</p></b>
+<b><p align="justify">EVO: pipelines for analysis of evolutionary patterns in SARS-CoV-2 genomes</p></b>
+</p>
 
 ### Installation ###
 
