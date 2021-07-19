@@ -29,10 +29,10 @@ To install the dependencies using conda:
 conda install -c cobilab gto --yes
 conda install -c cobilab geco3 --yes
 ```
-To install EAGLE2:
+To install EAGLE3:
 ```
-git clone https://github.com/cobilab/eagle.git
-cd eagle/src/
+git clone https://github.com/cobilab/eagle3.git
+cd eagle3/src/
 cmake .
 make
 ```
