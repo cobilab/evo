@@ -1,13 +1,7 @@
 <br>
-<div align="center">
-  
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
-
-</div>
-<br>
 <p align="center"><img src="imgs/logo.png" alt="evo" height="90" border="0" /></p>
 <br>
-<p align="justify">EVO is a package to analyze Evolutionary patterns in SARS-CoV-2 genomes.</p>
+<b><p align="justify">EVO is a package to analyze Evolutionary patterns in SARS-CoV-2 genomes.</p></b>
 
 ### Installation ###
 
@@ -65,7 +59,8 @@ For any issue let us know at [issues link](https://github.com/cobilab/evo/issues
 
 ### License ###
 
-GPL v3.
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
+
 
 For more information:
 <pre>http://www.gnu.org/licenses/gpl-3.0.html</pre>
