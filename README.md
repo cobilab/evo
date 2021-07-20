@@ -1,10 +1,9 @@
-<br>
 <p align="center"><img src="imgs/logo.png" alt="evo" height="90" border="0" />
 <br><br>
 <b>Pipelines for the analysis of evolutionary patterns in SARS-CoV-2 genomes</b>
 </p>
 
-### Installation ###
+### 1. Installation ###
 
 <p align="justify">The following instructions show the procedure to install and run EVO: </p>
 
@@ -33,7 +32,7 @@ conda install -c cobilab gto --yes
 conda install -c cobilab geco3 --yes
 ```
 
-### Preparing the input data ###
+### 2. Preparing the input data ###
 
 ```
 lzma -d SDB.fasta.lzma 
@@ -42,9 +41,9 @@ lzma -d FIL_SDB.fasta.lzma
 ./GetHumanData.sh
 ```
 
-### Run EVO ###
+### 3. Running EVO analysis ###
 
-#### Coronaviruses RAWs analysis: ####
+#### 3.1 Coronaviruses RAWs analysis: ####
 ```
 mkdir -p raws_analysis
 cd raws_analysis/
@@ -59,7 +58,7 @@ chmod +x *.sh
 ./ShowCoronasRaws.sh 12
 ```
 
-#### Coronaviruses NCD analysis: ####
+#### 3.2 Coronaviruses NCD analysis: ####
 
 ```
 cd ../ # Please, run this if you were at raws_analysis/
@@ -72,7 +71,7 @@ chmod +x *.sh
 ./NCD.sh REF.fa CORONAS.fa
 ```
 
-#### Coronaviruses Relative Complexity profile analysis: ####
+#### 3.3 Coronaviruses Relative Complexity profile analysis: ####
 
 ```
 cd ../ # Please, run this if you were at raws_analysis, ncd_analysis, or any other
@@ -97,7 +96,7 @@ gto_fasta_extract_read_by_pattern -p "NC_019843.3" < CORONAS.fa > MERS.fa
 ./RCPCoronas.sh 25    # 25 stands for the window size for the low-pass filter
 ```
 
-#### SARS-CoV-2 RAW analysis ####
+#### 3.4 SARS-CoV-2 RAW analysis ####
 
 ```
 cd ../ # Please, run this if you were at raws_analysis, ncd_analysis, or any other
@@ -124,7 +123,7 @@ cp ../ExtractReadsWithExtraChars.sh .
 ./FindRAWException.sh CGGCGGGCACGTA 10 # Persistent
 ```
 
-#### SARS-CoV-2 kmer conservation analysis: ####
+#### 3.5 SARS-CoV-2 kmer conservation analysis: ####
 
 ```
 cd ../ # Please, run this if you were at raws_analysis, ncd_analysis, or any other
@@ -144,7 +143,7 @@ chmod +x *.sh
 awk '{ sum += $4; n++ } END { if (n > 0) print sum/n/117012*100; }' Conservation_k12.txt
 ```
 
-#### SARS-CoV-2 Average NCD to other coronaviruses in time: ####
+#### 3.6 SARS-CoV-2 Average NCD to other coronaviruses in time: ####
 
 ```
 cd ../ # Please, run this if you were at raws_analysis, ncd_analysis, or any other
@@ -160,7 +159,7 @@ chmod +x *.sh
 ./NCDProfile.sh Report_NCD_MW251308.1.txt 2 0.266 0.284
 ```
 
-#### SARS-CoV-2 Nucleotide Distribution in time: ####
+#### 3.7 SARS-CoV-2 Nucleotide Distribution in time: ####
 
 ```
 cd ../ # Please, run this if you were at raws_analysis, ncd_analysis, or any other
@@ -177,15 +176,15 @@ chmod +x *.sh
 ./NucleotideProfile.sh Report_Perc_Nucleotide.txt 2 32.05 32.25 T 5
 ```
 
-### Citation ###
+### 4. Citation ###
 
  * Article under Review.
 
-### Issues ###
+### 5. Issues ###
 
 For any issue let us know at [issues link](https://github.com/cobilab/evo/issues).
 
-### License ###
+### 6. License ###
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
 
