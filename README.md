@@ -1,4 +1,10 @@
-<p align="center"><img src="imgs/logo.png" alt="evo" height="90" border="0" />
+<p align="center">
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
+[![Speed](https://img.shields.io/static/v1.svg?label=Fast&message=High%20speed%20performance&color=green)](#)
+[![Reproducibility](https://img.shields.io/static/v1.svg?label=Reproducibility&message=Full%20reproducibility&color=gold)](#)
+[![Release](https://img.shields.io/static/v1.svg?label=Release&message=v2.2&color=orange)](https://github.com/cobilab/evo/releases/tag/v1)
+<br>
+<img src="imgs/logo.png" alt="evo" height="90" border="0" />
 <br><br>
 <b>Pipelines for the analysis of evolutionary patterns in SARS-CoV-2 genomes</b>
 </p>
