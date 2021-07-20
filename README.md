@@ -1,13 +1,8 @@
 <br>
-<div align="center">
-  
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
-
-</div>
-<br>
-<p align="center"><img src="imgs/logo.png" alt="evo" height="90" border="0" /></p>
-<br>
-<p align="justify">EVO is a package to analyze Evolutionary patterns in SARS-CoV-2 genomes.</p>
+<p align="center"><img src="imgs/logo.png" alt="evo" height="90" border="0" />
+<br><br>
+<b>Pipelines for the analysis of evolutionary patterns in SARS-CoV-2 genomes</b>
+</p>
 
 ### Installation ###
 
@@ -34,10 +29,10 @@ To install the dependencies using conda:
 conda install -c cobilab gto --yes
 conda install -c cobilab geco3 --yes
 ```
-To install EAGLE2:
+To install EAGLE3:
 ```
-git clone https://github.com/cobilab/eagle.git
-cd eagle/src/
+git clone https://github.com/cobilab/eagle3.git
+cd eagle3/src/
 cmake .
 make
 ```
@@ -65,7 +60,8 @@ For any issue let us know at [issues link](https://github.com/cobilab/evo/issues
 
 ### License ###
 
-GPL v3.
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
+
 
 For more information:
 <pre>http://www.gnu.org/licenses/gpl-3.0.html</pre>
