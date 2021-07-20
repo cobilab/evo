@@ -187,15 +187,13 @@ chmod +x *.sh
 ./NucleotideProfile.sh Report_Perc_Nucleotide.txt 2 32.05 32.25 T 5
 ```
 
+For any issue let us know at [issues link](https://github.com/cobilab/evo/issues).
+
 ### 4. Citation ###
 
  * Article under Review.
 
-### 5. Issues ###
-
-For any issue let us know at [issues link](https://github.com/cobilab/evo/issues).
-
-### 6. License ###
+### 5. License ###
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
 
