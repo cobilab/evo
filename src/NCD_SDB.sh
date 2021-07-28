@@ -15,9 +15,9 @@ function RUN_NCD (){
   PARAM_C=" -tm 13:20:1:0:0.95/5:1:0.95 -tm 3:1:0:0:0.8/0:0:0 ";
   PARAM_CAB=" -tm 13:100:1:0:0.95/5:10:0.95 -tm 3:1:0:0:0.8/0:0:0 ";
   #
-  (./GeCo3 -v $PARAM_C $1.seq) &> REPORT_$1
-  (./GeCo3 -v $PARAM_C $2.seq) &> REPORT_$2
-  (./GeCo3 -v $PARAM_CAB $1-$2.seq) &> REPORT_$1-$2
+  (GeCo3 -v $PARAM_C $1.seq) &> REPORT_$1
+  (GeCo3 -v $PARAM_C $2.seq) &> REPORT_$2
+  (GeCo3 -v $PARAM_CAB $1-$2.seq) &> REPORT_$1-$2
   #
   Cx=`cat  REPORT_$1 | grep "Total bytes" | awk '{print $3;}'`;
   Cy=`cat  REPORT_$2 | grep "Total bytes" | awk '{print $3;}'`;
